@@ -28,7 +28,7 @@ module moldA(length, width, height)
                 // Create a peg based on the current loop coordinates
                 translate([length / 2, y * (width / yMax), z * (height / zMax)])
                 rotate([0, 90, 0])
-                cylinder(d = 2.7, h = 3);
+                cylinder(d = 2.7, h = 2.7);
             }
         }
     }
@@ -53,7 +53,7 @@ module moldB(length, width, height)
                 {
                     translate([length / 2, y * (width / yMax), z * (height / zMax)])
                     rotate([0, 90, 0])
-                    cylinder(d = 3, h = 3.5);
+                    cylinder(d = 3, h = 3);
                 }
             }
         }
